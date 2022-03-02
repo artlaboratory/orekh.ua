@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/gohalalgo/public_html/test/
+    - export PRODCUTIONPATH=/home/gohalalgo/public_html/
+    - /bin/cp -r /home/gohalalgo/repositories/gohalalgo_landing_page/* $DEPLOYPATH
+    - /bin/cp -r /home/gohalalgo/repositories/gohalalgo_landing_page/* $PRODCUTIONPATH

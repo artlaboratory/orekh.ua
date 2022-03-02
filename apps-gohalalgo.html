@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Gohalalgo App</title>
+  <link rel="shortcut icon" href="favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- bxslider -->
+<link type="text/css" rel='stylesheet' href="js/bxslider/jquery.bxslider.css">
+<!-- End bxslider -->
+<!-- flexslider -->
+<link type="text/css" rel='stylesheet' href="js/flexslider/flexslider.css">
+<!-- End flexslider -->
+
+<!-- bxslider -->
+<link type="text/css" rel='stylesheet' href="js/radial-progress/style.css">
+<!-- End bxslider -->
+
+<!-- Animate css -->
+<link type="text/css" rel='stylesheet' href="css/animate.css">
+<!-- End Animate css -->
+
+<!-- Bootstrap css -->
+<link type="text/css" rel='stylesheet' href="css/bootstrap.min.css">
+<link type="text/css" rel='stylesheet' href="js/bootstrap-progressbar/bootstrap-progressbar-3.2.0.min.css">
+<!-- End Bootstrap css -->
+
+<!-- Jquery UI css -->
+<link type="text/css" rel='stylesheet' href="js/jqueryui/jquery-ui.css">
+<link type="text/css" rel='stylesheet' href="js/jqueryui/jquery-ui.structure.css">
+<!-- End Jquery UI css -->
+
+<!-- Fancybox -->
+<link type="text/css" rel='stylesheet' href="js/fancybox/jquery.fancybox.css">
+<!-- End Fancybox -->
+
+<link type="text/css" rel='stylesheet' href="fonts/fonts.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+<link type="text/css" data-themecolor="default" rel='stylesheet' href="css/main-green.css">
+
+<link type="text/css" rel='stylesheet' href="js/rs-plugin/css/settings.css">
+<link type="text/css" rel='stylesheet' href="js/rs-plugin/css/settings-custom.css">
+<link type="text/css" rel='stylesheet' href="js/rs-plugin/videojs/video-js.css">
+</head>
+<body>
+  <div class="mask-l" style="background-color: #fff; width: 100%; height: 100%; position: fixed; top: 0; left:0; z-index: 9999999;"></div> <!--removed by integration-->
+<header>
+  <div class="container b-header__box b-relative">
+    <a href="/" class="b-left b-logo "><img class="color-theme" data-retina src="img/logo-header-default.png" alt="Logo" /></a>
+    <div class="b-header-r b-right b-header-r--icon">
+      <div class="b-header-ico-group f-header-ico-group b-right">
+          
+          
+      </div>
+      <div class="b-top-nav-show-slide f-top-nav-show-slide b-right j-top-nav-show-slide"><i class="fa fa-align-justify"></i></div>
+      <nav class="b-top-nav f-top-nav b-right j-top-nav">
+          <ul class="b-top-nav__1level_wrap">
+    <li class="b-top-nav__1level f-top-nav__1level  f-primary-b"><a href="index.html"><i class="fa fa-home b-menu-1level-ico"></i>Beranda </a>
+                    
+                </li>
+                <li class="b-top-nav__1level f-top-nav__1level f-primary-b">
+                    <a href="apps-gohalalgo.html"><i class="fa fa-folder-open b-menu-1level-ico is-active-top-nav__1level"></i>GohalalGo Apps</a>
+                   
+                </li>
+                <li class="b-top-nav__1level f-top-nav__1level f-primary-b">
+                    <a href="virtual-ziarah.html"><i class="fa fa-folder-open b-menu-1level-ico is-active-top-nav__1level"></i>Virtual Ziarah</a>
+                   
+                </li>
+                <li class="b-top-nav__1level f-top-nav__1level f-primary-b">
+                    <a href=""><i class="fa fa-folder-open b-menu-1level-ico"></i>Haji dan Umroh<span class="b-ico-dropdown"><i class="fa fa-arrow-circle-down"></i></span></a>
+                    <div class="b-top-nav__dropdomn">
+                         <ul class="b-top-nav__2level_wrap">
+                            <li class="b-top-nav__2level_title f-top-nav__2level_title">Jenis Perjalanan</li>
+                            <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="https://paket.gohalalgo.com/Paket/Umroh"><i class="fa fa-angle-right"></i>Umroh</a></li>
+                            <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="https://paket.gohalalgo.com/Paket/Haji"><i class="fa fa-angle-right"></i>Haji Khusus</a></li>
+                            <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="https://paket.gohalalgo.com/Paket/Wisata"><i class="fa fa-angle-right"></i>Wisata Halal</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="b-top-nav__1level f-top-nav__1level f-primary-b">
+                    <a href="https://partner.gohalalgo.co.id"><i class="fa fa-picture-o b-menu-1level-ico"></i>Partnership</a>
+                </li>
+                <li class="b-top-nav__1level f-top-nav__1level f-primary-b">
+                    <a href="https://blog.gohalalgo.com/"><i class="fa fa-code b-menu-1level-ico"></i>Blog</a>
+                </li>
+    
+</ul>
+
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="j-menu-container"></div>
+
+
+  <div class="l-main-container">
+  <section class="b-infoblock b-bg-block-mobile b-product-launch">
+    <div class="container b-infoblock--without-border">
+      <div class="row b-infoblock--without-border">
+        <div class="col-md-5 col-sm-offset-1 col-sm-7 col-xs-12 f-right">
+          <h1 class="c-white f-primary-b f-title-bigger">Download Aplikasi</h1>
+          <div class="b-product-info b-shortcode-example">
+              <div class="b-right b-margin-left-default"><img class="fade-in-animate" data-retina src="img/slider/slider_icon-flat-camera.png" alt=""/></div>
+              <div class="b-product-launch__text">
+                <h2 class="f-primary-b f-title-middle c-white">Moslem Super Apps</h2>
+                <p class="c-white">Yuk mari beramai ramai sebarkan benih kebaikan bersama melalui aplikasi gohalalgo. <br/> Kami adalah Marketplace Haji dan Umroh terbesar di Indonesia.</p>
+              </div>
+            <h3 class="f-primary-l c-white f-title-big b-default-top-indent">Tersedia Di </h3>
+            <div>
+                <a class="b-btn-special f-btn-special c-white" href="https://bit.ly/GHGiOS2021">
+                    <i class="fa fa-apple b-left"></i>
+                    <p><span>Available on the</span><br/><strong class="f-primary-b f-uppercase">app store</strong></p>
+                </a>
+                <a class="b-btn-special f-btn-special c-white b-margin-left-standard" href="https://bit.ly/GHGAndroid2021">
+                    <i class="fa fa-mobile b-left b-icon-fix"></i>
+                    <p><span>Available on the</span><br/><strong class="f-primary-b">Google Play</strong></p>
+                </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-offset-1 col-sm-7 col-xs-12">
+        	<img class="fade-in-animate" data-retina src="img/hp_transparent_02.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="b-infoblock " id="fitur_gohalalgo">
+      <div class="container">
+          <div class="b-null-bottom-indent b-infoblock-with-icon-group clearfix b-infoblock-with-icon--sm f-infoblock-with-icon--sm b-infoblock-with-icon--colored-bg b-info-container">
+              <h3 class="c-green f-primary-b f-left" style="margin-left:45px">Teman Anda Beribadah</h3>
+              
+<div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="b-infoblock-with-icon">
+        <a href="#" class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate">
+            <img src="img/fitur/ic_1_marketplace.png" width="100%" style="border-radius:100px" />
+        </a>
+        <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
+            <a href="#" class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-sb">Marketplace Umroh Haji</a>
+            <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text" style="color:#636363">
+                Menyediakan Paket Umroh, Haji, dan Wisata Halal
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="b-infoblock-with-icon">
+        <a href="#" class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate">
+            <img src="img/fitur/ic_2_arah_kiblat.png" width="100%" style="border-radius:100px" />
+        </a>
+        <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
+            <a href="#" class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-sb">Arah Kiblat</a>
+            <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text" style="color:#636363">
+                Memudahkan pencarian kiblat shalat.
+            </div>
+        </div>
+    </div>
+</div>
+<!--<div class="clearfix visible-sm-block"></div>-->
+<div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="b-infoblock-with-icon">
+        <a href="#" class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate">
+            <img src="img/fitur/ic_3_alquran.png" width="100%" style="border-radius:100px" />
+        </a>
+        <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
+            <a href="#" class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-sb">Al-Quran</a>
+            <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text" style="color:#636363">
+                Hafalan jadi mudah dengan suara murotal.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix visible-sm-block"></div>
+
+<div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="b-infoblock-with-icon">
+        <a href="#" class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate">
+            <img src="img/fitur/ic_4_grupngaji.png" width="100%" style="border-radius:100px" />
+        </a>
+        <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
+            <a href="#" class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-sb">Grup Mengaji</a>
+            <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text" style="color:#636363">
+                Grup Khataman dan Ngaji Bareng disertai Chat.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix visible-md-block visible-lg-block"></div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="b-infoblock-with-icon">
+        <a href="#" class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate">
+            <img src="img/fitur/ic_5_camera.png" width="100%" style="border-radius:100px" />
+        </a>
+        <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
+            <a href="#" class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-sb">Kamera</a>
+            <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text" style="color:#636363">
+                Kamera dengan Frame Tematik Islami
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="b-infoblock-with-icon">
+        <a href="#" class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate">
+            <img src="img/fitur/ic_6_bagiayat.png" width="100%" style="border-radius:100px" />
+        </a>
+        <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
+            <a href="#" class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-sb">Berbagi Ayat</a>
+            <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text" style="color:#636363">
+                Bagikan Ayat Favorit dengan Foto yang Indah
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="b-infoblock-with-icon">
+        <a href="#" class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate">
+            <img src="img/fitur/ic_7_jadwalshalat.png" width="100%" style="border-radius:100px" />
+        </a>
+        <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
+            <a href="#" class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-sb">Jadwal Shalat</a>
+            <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text" style="color:#636363">
+                Jadwal Shalat agar tidak Telat Shalat
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix visible-sm-block"></div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="b-infoblock-with-icon">
+        <a href="#" class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate">
+            <img src="img/fitur/ic_8_wawasan_islami.png" width="100%" style="border-radius:100px" />
+        </a>
+        <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
+            <a href="#" class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-sb">Wawasan Islami</a>
+            <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text" style="color:#636363">
+                Pengetahuan Islam untuk Umroh dan Haji
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix visible-md-block visible-lg-block"></div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="b-infoblock-with-icon">
+        <a href="#" class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate">
+            <img src="img/fitur/ic_9_quiz.png" width="100%" style="border-radius:100px" />
+        </a>
+        <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
+            <a href="#" class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-sb">Quiz Islami</a>
+            <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text" style="color:#636363">
+                Uji Kompetensi Islam dan dapatkan <strong>hadiah langsung</strong>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="b-infoblock-with-icon">
+        <a href="#" class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate">
+            <img src="img/fitur/ic_10_sambungayat.png" width="100%" style="border-radius:100px" />
+        </a>
+        <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
+            <a href="#" class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-sb">Sambung Ayat</a>
+            <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text" style="color:#636363">
+                Melantunkan Ayat suci Al-Quran bersama-sama
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="b-infoblock-with-icon">
+        <a href="#" class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate">
+            <img src="img/fitur/ic_11_virtualziarah.png" width="100%" style="border-radius:100px" />
+        </a>
+        <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
+            <a href="#" class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-sb">Virtual Ziarah</a>
+            <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text" style="color:#636363">
+                Virtual Ziarah Live Madinah Mekah Interaktif
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix visible-sm-block"></div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="b-infoblock-with-icon">
+        <a href="#" class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate">
+            <img src="img/fitur/ic_12_reseller.png" width="100%" style="border-radius:100px" />
+        </a>
+        <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
+            <a href="#" class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-sb">Mitra GohalalGo</a>
+            <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text" style="color:#636363">
+                Mitra Reseller berbagai Produk GohalalGo
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix visible-sm-block"></div>
+          </div>
+          <div class="b-default-top-indent j-data-element" data-animate="fadeInDown">
+              <button class="button-sm b-right j-data-element" data-animate="shake">Ikut Tour</button>
+              <div class="f-title-big f-primary-l c-primary">Ingin tahu lebih dekat <span class="f-primary-b c-default">Gohalalgo</span></div>
+          </div>
+      </div>
+  </section>
+  <section class="b-infoblock--without-padding b-diagonal-line-bg-light">
+    <div class="container b-img-group-wrap">
+      <div class="row">
+        <div class="b-img-group wrap-img-appearance">
+          <img data-retina data-animate="fadeInLeft" class="b-img-group-item_1" src="img/01_grup_ngaji.png" alt=""/>
+        </div>
+        <div class="col-md-5 col-sm-12 col-md-offset-6 col-sm-offset-0 b-infoblock--without-border">
+          <h2 class="f-primary-l">Grup Mengaji</h2>
+          <p>Grup Mengaji Gohalalgo memudahkan dalam progres mengaji Online karena:</p>
+          <div class="b-list-with-icons">
+            <div class="b-list-with-icons__item">
+              <div class="b-list-with-icons__item_icon f-list-with-icons__item_icon f-list-with-icons__item_icon_1 fade-in-animate">
+                <i class="fa fa-arrow-circle-right"></i>
+              </div>
+              <div class="b-list-with-icons__item_text">
+                <a class="b-list-with-icons__item_title f-list-with-icons__item_title f-primary-b" href="blog_detail_left_slidebar.html">Progress Tersimpan</a>
+                <div class="b-list-with-icons__item_desc f-list-with-icons__item_desc">Kamu bisa melihat progress sejauh mana mengaji Al Quran dan Progress tersimpan bersama Akun</div>
+              </div>
+            </div>
+            <div class="b-list-with-icons__item">
+              <div class="b-list-with-icons__item_icon f-list-with-icons__item_icon f-list-with-icons__item_icon_1 fade-in-animate">
+                <i class="fa fa-arrow-circle-right"></i>
+              </div>
+              <div class="b-list-with-icons__item_text">
+                <a class="f-list-with-icons__item_title  f-primary-b" href="blog_detail_left_slidebar.html">Grup Bersifat Tertutup</a>
+                <div class="b-list-with-icons__item_desc f-list-with-icons__item_desc">Kamu bisa mengajak keluarga, saudara, teman, bahkan umat muslim lainnya untuk mengaji bersama</div>
+              </div>
+            </div>
+            <div class="b-list-with-icons__item">
+              <div class="b-list-with-icons__item_icon f-list-with-icons__item_icon f-list-with-icons__item_icon_1 fade-in-animate">
+                <i class="fa fa-arrow-circle-right"></i>
+              </div>
+              <div class="b-list-with-icons__item_text">
+                <a class="b-list-with-icons__item_title f-list-with-icons__item_title  f-primary-b" href="blog_detail_left_slidebar.html">Share Kode Unik</a>
+                <div class="b-list-with-icons__item_desc f-list-with-icons__item_desc">Dengan kode unik yang tertera kamu bisa mengajak teman masuk ke grup ngajimu atau kamu bisa join ke grup ngaji lainnya</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="b-infoblock--without-padding b-diagonal-line-bg-light" style="background-image: url('img/bg_light-lg.jpg')">
+    <div class="container b-img-group-wrap">
+      <div class="row">
+        <div class="b-img-group wrap-img-appearance">
+          <img data-retina data-animate="fadeInLeft" class="b-img-group-item_1" src="img/02_grup_khatam.png" alt=""/>
+          <!--<img data-retina data-animate="fadeInLeft" class="b-img-group-item_1" src="img/01_grup_ngaji.png" alt=""/>-->
+        </div>
+        <div class="col-md-5 col-sm-12 col-md-offset-6 col-sm-offset-0 b-infoblock--without-border">
+          <h2 class="f-primary-l">Grup Mengkhatam</h2>
+          <p>Group Khatam Gohalalgo memudahkan khataman Al Quran bersama keluarga atau komunitasmu</p>
+          <div class="b-list-with-icons">
+            <div class="b-list-with-icons__item">
+              <div class="b-list-with-icons__item_icon f-list-with-icons__item_icon f-list-with-icons__item_icon_1 fade-in-animate">
+                <i class="fa fa-arrow-circle-right"></i>
+              </div>
+              <div class="b-list-with-icons__item_text">
+                <a class="b-list-with-icons__item_title f-list-with-icons__item_title f-primary-b" href="blog_detail_left_slidebar.html">Mengkhatam Bersama</a>
+                <div class="b-list-with-icons__item_desc f-list-with-icons__item_desc">Kamu bisa khatam quran bersama dengan anggota grup</div>
+              </div>
+            </div>
+            <div class="b-list-with-icons__item">
+              <div class="b-list-with-icons__item_icon f-list-with-icons__item_icon f-list-with-icons__item_icon_1 fade-in-animate">
+                <i class="fa fa-arrow-circle-right"></i>
+              </div>
+              <div class="b-list-with-icons__item_text">
+                <a class="f-list-with-icons__item_title  f-primary-b" href="blog_detail_left_slidebar.html">Grup Bersifat Tertutup</a>
+                <div class="b-list-with-icons__item_desc f-list-with-icons__item_desc">Kamu bisa mengajak keluarga, saudara, teman, bahkan umat muslim lainnya untuk mengaji bersama dengan cara Share kode Unik Grup khatam Anda</div>
+              </div>
+            </div>
+            <div class="b-list-with-icons__item">
+              <div class="b-list-with-icons__item_icon f-list-with-icons__item_icon f-list-with-icons__item_icon_1 fade-in-animate">
+                <i class="fa fa-arrow-circle-right"></i>
+              </div>
+              <div class="b-list-with-icons__item_text">
+                <a class="b-list-with-icons__item_title f-list-with-icons__item_title  f-primary-b" href="blog_detail_left_slidebar.html">Pembagian Juz</a>
+                <div class="b-list-with-icons__item_desc f-list-with-icons__item_desc">Dengan fitur ini kamu bisa membagi anggota grup khatam kamu untuk membaca juz yang telah dipilih</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="b-infoblock--without-padding b-diagonal-line-bg-light">
+    <div class="container b-img-group-wrap">
+      <div class="row">
+        <div class="b-img-group wrap-img-appearance">
+          <img data-retina data-animate="fadeInLeft" class="b-img-group-item_1" src="img/03_grup_chat.png" alt=""/>
+          <!--<img data-retina data-animate="fadeInLeft" class="b-img-group-item_1" src="img/01_grup_ngaji.png" alt=""/>-->
+        </div>
+        <div class="col-md-5 col-sm-12 col-md-offset-6 col-sm-offset-0 b-infoblock--without-border">
+          <h2 class="f-primary-l">Chat Grup</h2>
+          <p>Pembelajaran akan lancar diimbangi komunikasi yang terintegrasi</p>
+          <div class="b-list-with-icons">
+            <div class="b-list-with-icons__item">
+              <div class="b-list-with-icons__item_icon f-list-with-icons__item_icon f-list-with-icons__item_icon_1 fade-in-animate">
+                <i class="fa fa-arrow-circle-right"></i>
+              </div>
+              <div class="b-list-with-icons__item_text">
+                <a class="b-list-with-icons__item_title f-list-with-icons__item_title f-primary-b" href="blog_detail_left_slidebar.html">Memulai Percakapan</a>
+                <div class="b-list-with-icons__item_desc f-list-with-icons__item_desc">Menyapa dan menyambung tali silaturahim dengan anggota Grup Ngaji/Khatam</div>
+              </div>
+            </div>
+            <div class="b-list-with-icons__item">
+              <div class="b-list-with-icons__item_icon f-list-with-icons__item_icon f-list-with-icons__item_icon_1 fade-in-animate">
+                <i class="fa fa-arrow-circle-right"></i>
+              </div>
+              <div class="b-list-with-icons__item_text">
+                <a class="f-list-with-icons__item_title  f-primary-b" href="blog_detail_left_slidebar.html">Fastabiqul Khairat</a>
+                <div class="b-list-with-icons__item_desc f-list-with-icons__item_desc">Saling mengingatkan dan mengajak untuk mengaji bersama</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="b-bg-girl b-infoblock b-benefits-container f-benefits-container" style="background-image:url('img/bg_app_page_blendblue.png')">
+    <div class="container f-center">
+      <p class="f-primary-b b-benefits_description f-benefits_description">GohalalGo Selalu Memberikan Terbaik</p>
+      <h2 class="f-primary-l b-benefits_title f-benefits_title">Terlengkap Terupdate Realtime</h2>
+      <div class="row" data-animate-group-wrap>
+        <div class="col-md-3 col-sm-6 col-xs-12 fade-in-animate" data-animate-group="1">
+          <div class="b-benefits__item_icon f-benefits__item_icon"><i class="fa fa-cloud-download"></i></div>
+          <div class="b-benefits__item_title f-benefits__item_title f-primary-b">+66000 Download</div>
+          <div class="b-benefits__item_description f-benefits__item_description f-primary-l">Lebih dari 66000 downloader yang memakai Aplikasi GohalalGo untuk Sarana Beribadah </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 fade-in-animate" data-animate-group="1">
+          <div class="b-benefits__item_icon f-benefits__item_icon "><i class="fa fa-users"></i></div>
+          <div class="b-benefits__item_title f-benefits__item_title f-primary-b">+150 Grup Ngaji</div>
+          <div class="b-benefits__item_description f-benefits__item_description f-primary-l">Lebih dari 150 Grup Ngaji yang terdaftar untuk melakukan ngaji bersama melalui Aplikasi GohalalGo </div>
+
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 fade-in-animate" data-animate-group="1">
+          <div class="b-benefits__item_icon f-benefits__item_icon "><i class="fa fa-plane"></i></div>
+          <div class="b-benefits__item_title f-benefits__item_title f-primary-b">+2000 Jamaah</div>
+          <div class="b-benefits__item_description f-benefits__item_description f-primary-l">Alhamdulillah  lebih dari 2000 jamaah sudah mempercayai GohalalGo untuk berangkat ke Tanah Suci </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 fade-in-animate" data-animate-group="1">
+          <div class="b-benefits__item_icon f-benefits__item_icon "><i class="fa fa-comments"></i></div>
+          <div class="b-benefits__item_title f-benefits__item_title f-primary-b">+ 10 season Quiz</div>
+          <div class="b-benefits__item_description f-benefits__item_description f-primary-l">Quiz Wawasan Islami berhadiah sudah diselenggarakan sebanyak lebih dari 10 season </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="b-infoblock--without-padding b-diagonal-line-bg-light">
+    <div class="container b-infoblock--without-border b-img-group-wrap b-img-group-wrap--v2">
+      <div class="b-img-group_v2 wrap-img-appearance">
+        <img data-retina data-animate="fadeInLeft" src="img/animation-data/phone_3.png" alt=""/>
+      </div>
+      <h2 class="f-center f-primary-l">GohalalGo <span class="f-primary-b">All in One</span> Muslim Apps</h2>
+      <p class="b-infoblock-description f-desc-section f-center f-employee__desc f-small f-primary-l">GohalalGo mempersembahkan Aplikasi Super Muslim untuk segala kebutuhan umat.</p>
+      <div class="row">
+        <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-6 col-xs-12 b-infoblock-with-icon-group b-infoblock-with-icon--sides-l f-infoblock-with-icon--sides-l b-infoblock-with-icon--dialog-r">
+          <div class="col-xs-12">
+            <div class="b-infoblock-with-icon">
+              <a class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate">
+                <i class="fa fa-plane"></i>
+              </a>
+              <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
+                <a class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-sb">Ibadah Umroh Haji</a>
+                <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text">
+                  Beragam paket untuk keberangkatan Umroh dan Haji
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="b-infoblock-with-icon">
+              <a class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate">
+                <i class="fa fa-clock-o"></i>
+              </a>
+              <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
+                <a class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-sb">Shalat 5 Waktu</a>
+                <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text">
+                  Ibadah shalat jadi mudah dengan reminder shalat
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="b-infoblock-with-icon">
+              <a class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate">
+                <i class="fa fa-share-alt"></i>
+              </a>
+              <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
+                <a class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-sb">Berbagi Ayat</a>
+                <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text">
+                  Sampaikan kalam Allah walau hanya satu ayat
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-offset-2 col-md-5 col-sm-6 col-sm-offset-0 col-xs-12 b-infoblock-with-icon-group b-infoblock-with-icon--sides-r f-infoblock-with-icon--sides-r b-infoblock-with-icon--dialog-l">
+          <div class="col-xs-12">
+            <div class="b-infoblock-with-icon">
+              <a class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate">
+                <i class="fa fa-book"></i>
+              </a>
+              <div class="b-infoblock-with-icon__info">
+                <a class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-sb">Wawasan Islam</a>
+                <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text">
+                  Perluas wawasan islami untuk menuju siratal mustakim.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="b-infoblock-with-icon">
+              <a href="lock-with-icon__info">
+                  <a  class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate">
+                <i class="fa fa-gift"></i>
+              </a>
+              <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
+                <a href="real_estate_agents_left_sidebar.html" class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-sb">Quiz Berhadiah</a>
+                <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text">
+                  Uji kompetensi islammu di sini dan menangkan beragam hadiah
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="b-infoblock-with-icon">
+              <a class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate">
+                <i class="fa fa-users"></i>
+              </a>
+              <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
+                <a href="education_listing.html" class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-sb">Grup Mengaji</a>
+                <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text">
+                  Ngaji bersama dengan teman dan keluarga dengan progress mengaji
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="b-infoblock--without-padding b-bg-video_v2 f-center" style="background-image:url('img/bg_mecca_gohalalgo.png')">
+    <div class="container b-infoblock--without-border">
+      <a href="https://www.youtube.com/channel/UCojgrHFVxcH8hHbOovoP-PQ/videos" class="b-video-mac__btn b-btn-transparent f-btn-transparent f-primary-l">
+        watch <span class="f-primary-b">our</span> channel on Youtube
+      </a>
+      <p class="b-infoblock-description f-desc-section f-desc-section--light f-center f-employee__desc f-small f-primary-l">Lihat Bagaimana Grup Mengaji Membantu Anda dalam membuat daring grup mengaji.</p>
+    </div>
+    <div class="b-video-mac-wrap f-center">
+      <div class="b-video-mac">
+        <div class="b-video-mac__player">
+          <iframe src="https://www.youtube.com/embed/MeCYXmCkVLU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <!--<iframe src="http://player.vimeo.com/video/62542478?title=0&byline=0&portrait=0&badge=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="b-infoblock b-diagonal-line-bg-light">
+      <div class="container">
+    <h2 class="f-center f-primary-b">Testimoni Pengguna Gohalalgo</h2>
+    <p class="b-infoblock-description f-desc-section f-center f-employee__desc f-small f-primary-l">Gohalalgo Apps telah di download oleh puluhan ribu pengguna, dan Alhamdulillah dapat memberikan nilai tambah dan manfaat kepada umat</p>
+    <div class="row" data-animate-group-wrap>
+        <div class="col-sm-6 col-xs-12">
+            <div class="b-mention-item">
+                <div class="b-mention-item__user f-center">
+                    <div class="b-mention-item__user_img">
+                        <img data-retina class="fade-in-animate" data-animate-group="2" src="img/users/user_md_4.png" alt="">
+                    </div>
+                    <div class="b-mention-item__user_info f-mention-item__user_info">
+                        <div class="f-mention-item__user_name f-primary-b">Yudhitama</div>
+                    </div>
+                </div>
+                <div class="b-remaining">
+                    <div class="b-mention-item__comment">
+                        <div class="b-mention-item__comment_text f-mention-item__comment_text">Aplikasinya bagus dan sangat menarik untuk dikunjungi<br/>
+                            <a href="https://google.com" target="_blank" class="f-primary-it f-more">Playstore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <div class="b-mention-item">
+                <div class="b-mention-item__user f-center">
+                    <div class="b-mention-item__user_img">
+                        <img data-retina class="fade-in-animate" data-animate-group="2" src="img/users/user_md_2.png" alt="">
+                    </div>
+                    <div class="b-mention-item__user_info f-mention-item__user_info">
+                        <div class="f-mention-item__user_name f-primary-b">Erdy Rozi</div>
+                    </div>
+                </div>
+                <div class="b-remaining">
+                    <div class="b-mention-item__comment">
+                        <div class="b-mention-item__comment_text f-mention-item__comment_text">Mudah dan Manfaat buat Umat Muslim.. semoga barokah.. terus kembangkan<br/>
+                            <a href="https://apple.com" target="_blank" class="f-primary-it f-more">AppStore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <div class="b-mention-item">
+                <div class="b-mention-item__user f-center">
+                    <div class="b-mention-item__user_img">
+                        <img data-retina class="fade-in-animate" data-animate-group="2" src="img/users/user_md_3.png" alt="">
+                    </div>
+                    <div class="b-mention-item__user_info f-mention-item__user_info">
+                        <div class="f-mention-item__user_name f-primary-b">Pakde Kumis</div>
+                    </div>
+                </div>
+                <div class="b-remaining">
+                    <div class="b-mention-item__comment">
+                        <div class="b-mention-item__comment_text f-mention-item__comment_text">Alhamdulillah bisa dijadikan sebagai alquran saku. Bisa dibawa kemana-mana dan bisa juga dibaca sewaktu-waktu..amin<br/>
+                            <a href="https://apple.com" target="_blank" class="f-primary-it f-more">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <div class="b-mention-item">
+                <div class="b-mention-item__user f-center">
+                    <div class="b-mention-item__user_img">
+                        <img data-retina class="fade-in-animate" data-animate-group="2" src="img/users/user_md.png" alt="">
+                    </div>
+                    <div class="b-mention-item__user_info f-mention-item__user_info">
+                        <div class="f-mention-item__user_name f-primary-b">Nasih Ngulwan</div>
+                    </div>
+                </div>
+                <div class="b-remaining">
+                    <div class="b-mention-item__comment">
+                        <div class="b-mention-item__comment_text f-mention-item__comment_text">Dengan aplikasi ini kami merasa terbantu sekali bila mau mempejari islam<br/>
+                            <a href="https://apple.com" target="_blank" class="f-primary-it f-more">Playstore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <div class="b-mention-item">
+                <div class="b-mention-item__user f-center">
+                    <div class="b-mention-item__user_img">
+                        <img data-retina class="fade-in-animate" data-animate-group="2" src="img/users/user_md_5.png" alt="">
+                    </div>
+                    <div class="b-mention-item__user_info f-mention-item__user_info">
+                        <div class="f-mention-item__user_name f-primary-b">Muhammad Ridwan Lahay</div>
+                    </div>
+                </div>
+                <div class="b-remaining">
+                    <div class="b-mention-item__comment">
+                        <div class="b-mention-item__comment_text f-mention-item__comment_text">Masya Allah aplikasinya sangat penting bagi kita semua<br/>
+                            <a href="https://apple.com" target="_blank" class="f-primary-it f-more">Playstore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <div class="b-mention-item">
+                <div class="b-mention-item__user f-center">
+                    <div class="b-mention-item__user_img">
+                        <img data-retina class="fade-in-animate" data-animate-group="2" src="img/users/user_md_6.png" alt="">
+                    </div>
+                    <div class="b-mention-item__user_info f-mention-item__user_info">
+                        <div class="f-mention-item__user_name f-primary-b">Syam Edward</div>
+                    </div>
+                </div>
+                <div class="b-remaining">
+                    <div class="b-mention-item__comment">
+                        <div class="b-mention-item__comment_text f-mention-item__comment_text">Aplikasi nya ngebantu banget, jadi lebih mudah untuk cari travel2 yg bener2 sudah berizin dari Kemenag... Good lahh pokonya<br/>
+                            <a href="https://apple.com" target="_blank" class="f-primary-it f-more">Playstore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--
+<div class="b-carousel-reset b-carousel-arr-out b-carousel-small-arr f-carousel-small-arr b-remaining">
+    <div class="f-center b-logo-group j-logo-slider">
+        <div class="b-logo-item"><a href="#">
+    <img class="is-normal" src="img/slider/partner/client-logo-1.png" alt=""/>
+    <img class="is-hover" src="img/slider/partner/client-logo-1h.png" alt=""/>
+</a></div>
+<div class="b-logo-item"><a href="#">
+    <img class="is-normal" src="img/slider/partner/client-logo-2.png" alt=""/>
+    <img class="is-hover" src="img/slider/partner/client-logo-2h.png" alt=""/>
+</a></div>
+<div class="b-logo-item"><a href="#">
+    <img class="is-normal" src="img/slider/partner/client-logo-3.png" alt=""/>
+    <img class="is-hover" src="img/slider/partner/client-logo-3h.png" alt=""/>
+</a></div>
+<div class="b-logo-item"><a href="#">
+    <img class="is-normal" src="img/slider/partner/client-logo-4.png" alt=""/>
+    <img class="is-hover" src="img/slider/partner/client-logo-4h.png" alt=""/>
+</a></div>
+<div class="b-logo-item"><a href="#">
+    <img class="is-normal" src="img/slider/partner/client-logo-5.png" alt=""/>
+    <img class="is-hover" src="img/slider/partner/client-logo-5h.png" alt=""/>
+</a></div>
+<div class="b-logo-item"><a href="#">
+    <img class="is-normal" src="img/slider/partner/client-logo-3.png" alt=""/>
+    <img class="is-hover" src="img/slider/partner/client-logo-3h.png" alt=""/>
+</a></div>
+<div class="b-logo-item"><a href="#">
+    <img class="is-normal" src="img/slider/partner/client-logo-4.png" alt=""/>
+    <img class="is-hover" src="img/slider/partner/client-logo-4h.png" alt=""/>
+</a></div>
+<div class="b-logo-item"><a href="#">
+    <img class="is-normal" src="img/slider/partner/client-logo-5.png" alt=""/>
+    <img class="is-hover" src="img/slider/partner/client-logo-5h.png" alt=""/>
+</a></div>
+
+    </div>
+</div>-->
+</section>
+  </div>
+
+<footer>
+  <div class="b-footer-primary">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-xs-12 f-copyright b-copyright">Copyright © 2021 - GohalalGo All Rights Reserved</div>
+            <div class="col-sm-8 col-xs-12">
+                <div class="b-btn f-btn b-btn-default b-right b-footer__btn_up f-footer__btn_up j-footer__btn_up">
+                    <i class="fa fa-chevron-up"></i>
+                </div>
+                <nav class="b-bottom-nav f-bottom-nav b-right hidden-xs">
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="apps-gohalalgo.html">Application</a></li>
+                        <li><a href="virtual-ziarah.html">Virtual Ziarah</a></li>
+                        <li><a href="https://paket.gohalalgo.com/Paket/Umroh">Umroh</a></li>
+                        <li><a href="https://partner.gohalalgo.co.id/Marketplace">Marketplace</a></li>
+                        <li><a href="kebijakan-dan-privasi.html">Kebijakan dan Privasi</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+  <div class="container">
+    <div class="b-footer-secondary row">
+      <div class="col-md-4 col-sm-12 col-xs-12 f-center b-footer-logo-containter">
+          <a href=""><img data-retina class="b-footer-logo color-theme" src="img/logo-vertical-default.png" alt="Logo"/></a>
+          <div class="b-footer-logo-text f-footer-logo-text">
+          <p>Super Apps Muslim Anak Negeri.</p>
+          <div class="b-btn-group-hor f-btn-group-hor">
+            <a href="https://www.instagram.com/gohalalgo/" class="b-btn-group-hor__item f-btn-group-hor__item">
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://web.facebook.com/gohalalgo" class="b-btn-group-hor__item f-btn-group-hor__item">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#" class="b-btn-group-hor__item f-btn-group-hor__item">
+              <i class="fa fa-globe"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <h4 class="f-primary-b">Latest blog posts</h4>
+        <div class="b-blog-short-post row">
+          <div class="b-blog-short-post__item col-md-12 col-sm-4 col-xs-12 f-primary-b">
+            <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
+              <a href="https://blog.gohalalgo.com/virtual-tour/virtual-tour-madinah-mengobati-rindu-akan-masjid-nabawi/">Virtual Tour Madinah – Mengobati Rindu Akan Masjid Nabawi</a>
+            </div>
+            <div class="b-blog-short-post__item_date f-blog-short-post__item_date">
+              March 05, 2021
+            </div>
+          </div>
+          <div class="b-blog-short-post__item col-md-12 col-sm-4 col-xs-12 f-primary-b">
+            <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
+              <a href="https://blog.gohalalgo.com/uncategorized/hadiahkan-pahala-badal-umroh-untuk-orang-yang-kamu-sayangi/">Hadiahkan Pahala Badal Umroh Untuk Orang Yang Kamu Sayangi</a>
+            </div>
+            <div class="b-blog-short-post__item_date f-blog-short-post__item_date">
+              March 17, 2021
+            </div>
+          </div>
+          <div class="b-blog-short-post__item col-md-12 col-sm-4 col-xs-12 f-primary-b">
+            <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
+              <a href="https://blog.gohalalgo.com/uncategorized/keistimewaan-masjid-nabawi-bagi-umat-islam/">Keistimewaan Masjid Nabawi bagi Umat Islam</a>
+            </div>
+            <div class="b-blog-short-post__item_date f-blog-short-post__item_date">
+              March 24, 2020
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <h4 class="f-primary-b">contact info</h4>
+        <div class="b-contacts-short-item-group">
+          <div class="b-contacts-short-item col-md-12 col-sm-4 col-xs-12">
+            <div class="b-contacts-short-item__icon f-contacts-short-item__icon f-contacts-short-item__icon_lg b-left">
+              <i class="fa fa-map-marker"></i>
+            </div>
+            <div class="b-remaining f-contacts-short-item__text">
+                PT. GOHALALGO SYARIAH INDONESIA<br/>
+                Menara Mandiri II Floor 16th Jln. Jend. Sudirman Kav 54-55 Kebayoran Baru - Jakarta Selatan<br/>
+                Indonesia.<br/>
+            </div>
+          </div>
+          <div class="b-contacts-short-item col-md-12 col-sm-4 col-xs-12">
+            <div class="b-contacts-short-item__icon f-contacts-short-item__icon b-left f-contacts-short-item__icon_md">
+              <i class="fa fa-phone"></i>
+            </div>
+            <div class="b-remaining f-contacts-short-item__text f-contacts-short-item__text_phone">
+                08118585060 <br/>
+                08119465060
+            </div>
+          </div>
+          <div class="b-contacts-short-item col-md-12 col-sm-4 col-xs-12">
+            <div class="b-contacts-short-item__icon f-contacts-short-item__icon b-left f-contacts-short-item__icon_xs">
+              <i class="fa fa-envelope"></i>
+            </div>
+            <div class="b-remaining f-contacts-short-item__text f-contacts-short-item__text_email">
+              <a href="mailto:marketing@gohalalgo.com">marketing@gohalalgo.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+<script src="js/breakpoints.js"></script>
+<script src="js/jquery/jquery-1.11.1.min.js"></script>
+<!-- bootstrap -->
+<script src="js/scrollspy.js"></script>
+<script src="js/bootstrap-progressbar/bootstrap-progressbar.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- end bootstrap -->
+<script src="js/masonry.pkgd.min.js"></script>
+<script src='js/imagesloaded.pkgd.min.js'></script>
+<!-- bxslider -->
+<script src="js/bxslider/jquery.bxslider.min.js"></script>
+<!-- end bxslider -->
+<!-- flexslider -->
+<script src="js/flexslider/jquery.flexslider.js"></script>
+<!-- end flexslider -->
+<!-- smooth-scroll -->
+<script src="js/smooth-scroll/SmoothScroll.js"></script>
+<!-- end smooth-scroll -->
+<!-- carousel -->
+<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<!-- end carousel -->
+<script src="js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+<script src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script src="js/rs-plugin/videojs/video.js"></script>
+
+<!-- jquery ui -->
+<script src="js/jqueryui/jquery-ui.js"></script>
+<!-- end jquery ui -->
+<script type="text/javascript" language="javascript"
+        src="https://maps.google.com/maps/api/js?sensor=false&key=AIzaSyCfVS1-Dv9bQNOIXsQhTSvj7jaDX7Oocvs"></script>
+<!-- Modules -->
+<script src="js/modules/sliders.js"></script>
+<script src="js/modules/ui.js"></script>
+<script src="js/modules/retina.js"></script>
+<script src="js/modules/animate-numbers.js"></script>
+<script src="js/modules/parallax-effect.js"></script>
+<script src="js/modules/settings.js"></script>
+<script src="js/modules/maps-google.js"></script>
+<script src="js/modules/color-themes.js"></script>
+<!-- End Modules -->
+
+<!-- Audio player -->
+<script type="text/javascript" src="js/audioplayer/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="js/audioplayer/js/jplayer.playlist.min.js"></script>
+<script src="js/audioplayer.js"></script>
+<!-- end Audio player -->
+
+<!-- radial Progress -->
+<script src="js/radial-progress/jquery.easing.1.3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.min.js"></script>
+<script src="js/radial-progress/radialProgress.js"></script>
+<script src="js/progressbars.js"></script>
+<!-- end Progress -->
+
+<!-- Google services -->
+<script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['corechart']}]}"></script>
+<script src="js/google-chart.js"></script>
+<!-- end Google services -->
+<script src="js/j.placeholder.js"></script>
+
+<!-- Fancybox -->
+<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+<script src="js/fancybox/jquery.mousewheel.pack.js"></script>
+<script src="js/fancybox/jquery.fancybox.custom.js"></script>
+<!-- End Fancybox -->
+<script src="js/user.js"></script>
+<script src="js/timeline.js"></script>
+<script src="js/fontawesome-markers.js"></script>
+<script src="js/markerwithlabel.js"></script>
+<script src="js/cookie.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/scrollIt/scrollIt.min.js"></script>
+<script src="js/modules/navigation-slide.js"></script>
+
+</body>
+</html>
